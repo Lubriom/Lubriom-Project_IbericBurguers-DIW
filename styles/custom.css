@@ -11968,6 +11968,7 @@ textarea.form-control-lg {
 }
 .logo {
   width: 72px;
+  height: 72px;
 }
 
 .img-cov {
@@ -11990,10 +11991,9 @@ textarea.form-control-lg {
   opacity: 0.4;
 }
 
-/* Título del popover */
 .popover-header {
-  background-color: #280600; /* Fondo del encabezado */
-  color: #fff; /* Color del texto */
+  background-color: #280600;
+  color: #fff;
 }
 
 .social-icons a {
@@ -12005,14 +12005,10 @@ textarea.form-control-lg {
   transform: scale(1.2);
 }
 
-.my-tooltip + .tooltip {
-  background-color: #f39c12; /* Fondo único */
-  color: #000; /* Texto negro */
-  border-radius: 0; /* Sin bordes redondeados */
-}
-
-@media screen and (max-width: 576px) {
-  #secondNav {
-    display: none;
-  }
+.pos-btt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
 }/*# sourceMappingURL=custom.css.map */

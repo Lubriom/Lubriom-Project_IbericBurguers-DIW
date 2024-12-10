@@ -364,10 +364,33 @@
             <p class="fw-bold">Roy Lee Lunar More</p>
         </div>
     </footer>
+    <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt">
+        ↑
+    </button>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        // Referencia al botón
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Mostrar u ocultar el botón según la posición del scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Mostrar después de 300px de desplazamiento
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Acción al hacer clic: Desplazarse hacia arriba con suavidad
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 

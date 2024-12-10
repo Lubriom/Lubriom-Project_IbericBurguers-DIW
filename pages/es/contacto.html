@@ -54,13 +54,13 @@
                             </li>
 
                             <div class="dropdown d-flex flex-column" data-bs-theme="light">
-                                <a class="btn btn-light dropdown-toggle d-flex align-items-center" href="#"
+                                <a class="btn btn-light dropdown-toggle d-flex align-items-center rounded-3" href="#"
                                     role="button" data-bs-toggle="dropdown" data-bs-display="static"
                                     aria-expanded="false">
                                     <img src="../../rsc/icons/spain.png" width="25" alt="Bandera de España">
                                     Español
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu dropdown-menu-end rounded-3" aria-labelledby="dropdownMenuButton1">
                                     <li class="justify-content-center">
                                         <a class="dropdown-item" href="../en/contact.html" data-bs-display="static">
                                             <img src="../../rsc/icons/usa.png" width="25"
@@ -72,7 +72,7 @@
                             </div>
                         </ul>
                         <form class="d-flex float-left p-1" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                            <input class="form-control me-2 rounded-3" type="search" placeholder="Buscar" aria-label="Search"
                                 data-bs-theme="light">
                             <button class="btn bg-success" type="submit"><span class="bi bi-search"></span></button>
                         </form>
@@ -240,7 +240,30 @@
             <p class="fw-bold">Roy Lee Lunar More</p>
         </div>
     </footer>
+    <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt">
+        ↑
+    </button>
     <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Mostrar u ocultar el botón según la posición del scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 250) { 
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Al hacer click te sube arriba del todo en la pagina
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
