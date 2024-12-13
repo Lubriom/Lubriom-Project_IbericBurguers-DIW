@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Drinks | Iberic Burgers </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Drinks | Iberic Burguers </title>
 </head>
 
 <body class="container-fluid p-0">
@@ -24,9 +27,9 @@
     <header class="sticky-top z-3">
         <nav class="navbar navbar-expand-xl bg-dark border-body " data-bs-theme="dark">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand" href="indexEN.html">
+                <a class="navbar-brand title_logo" href="indexEN.html">
                     <img class="logo" src="../../rsc/icons/logo.png" alt="logo">
-                    Iberic Burgers
+                    Iberic Burguers
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas"
                     aria-controls="offCanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +41,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
-                        <ul class="navbar-nav d-flex align-items-center p-1">
+                        <ul class="navbar-nav d-flex align-items-center p-1 nav_fs">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="indexEN.html">Start</a>
                             </li>
@@ -53,28 +56,28 @@
                                 <a class="nav-link" href="contact.html">Contact and Reservations</a>
                             </li>
                         </ul>
-                        <div class="dropdown flex-column d-flex justify-self-center p-1" data-bs-theme="light">
+                        <div class="dropdown flex-column d-flex align-self-center p-1" data-bs-theme="light">
 
                             <a class="btn btn-light dropdown-toggle align-items-center justify-content-center rounded-3"
                                 href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"
                                 aria-expanded="false">
-                                <img src="../../rsc/icons/usa.png" width="25" alt="Bandera de Estados Unidos">
-                                Inglés
+                                <img src="../../rsc/icons/usa.png" width="25" alt="Flag of Usa">
+                                English
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-end rounded-3" aria-labelledby="dropdownMenuButton1">
                                 <li class="justify-content-center">
                                     <a class="dropdown-item" href="../es/bebidas.html" data-bs-display="static">
-                                        <img src="../../rsc/icons/spain.png" width="25" alt="Bandera de España">
-                                        Español
+                                        <img src="../../rsc/icons/spain.png" width="25" alt="Flag of Spain">
+                                        Spanish
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <form class="d-flex float-left p-1" role="search">
+                        <form class="float-left p-1 d-flex" role="search">
                             <input class="form-control me-2 rounded-3" type="search" placeholder="Search"
                                 aria-label="Search" data-bs-theme="light">
-                            <button class="btn bg-success d-flex" type="submit"><span class="bi bi-search"
+                            <button class="btn bg-success" type="submit"><span class="bi bi-search"
                                     aria-label="Search"></span></button>
                         </form>
                     </div>
@@ -91,7 +94,7 @@
             <img src="../../rsc/images/drinkHead.png" alt="Decorative image of the drinks menu"
                 class="img-fluid img-head1 w-100">
             <div class="position-absolute top-50 start-50 translate-middle">
-                <h1 class="mb-3">Drinks</h1>
+                <h1 class="mb-3 title_header">Drinks</h1>
                 <h2 class="fs-4 mb-3">Everything you need to drink can be found here.</h2>
             </div>
         </div>
@@ -127,10 +130,11 @@
                                     <img src="../../rsc/images/coca.png" class="card-img-top img-cov" alt="Coke">
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">Coke</h5>
-                                        <p class="card-text">1.25€</p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            <p class="card-text">1.25€</p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -139,10 +143,11 @@
                                     <img src="../../rsc/images/pepsi.png" class="card-img-top img-cov" alt="Pepsi">
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">Pepsi</h5>
-                                        <p class="card-text">1.05€</p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            <p class="card-text">1.05€</p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -152,10 +157,11 @@
                                         alt="Fanta Orange">
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">Fanta Orange 1.25L</h5>
-                                        <p class="card-text">1.31€</p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            <p class="card-text">1.31€</p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -164,10 +170,11 @@
                                     <img src="../../rsc/images/sprite.png" class="card-img-top img-cov" alt="Sprite">
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">Sprite 2L</h5>
-                                        <p class="card-text">1.75€</p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            <p class="card-text">1.75€</p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +195,13 @@
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">
                                             Bifrutas Mediterranean
-                                        </h5>
-                                        <p class="card-text">
-                                            2.49€</p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                2.49€</p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -205,13 +213,14 @@
                                     <div class="card-body d-flex flex-column">
                                         <h3 class="fs-5 card-title">
                                             Bifrutas - Tropical
-                                        </h5>
-                                        <p class="card-text">
-                                            1.45€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.45€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -225,13 +234,14 @@
                                             Casera
                                             -
                                             Jug
-                                        </h5>
-                                        <p class="card-text">
-                                            1.85€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.85€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -245,13 +255,14 @@
                                             Marqués
                                             of
                                             Murrieta
-                                        </h5>
-                                        <p class="card-text">
-                                            26.50€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                26.50€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -272,13 +283,14 @@
                                             Aguila
                                             Dorada
                                             Beer
-                                        </h5>
-                                        <p class="card-text">
-                                            1.45€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.45€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -290,13 +302,14 @@
                                         <h3 class="fs-5 card-title">
                                             Heineken
                                             Beer
-                                        </h5>
-                                        <p class="card-text">
-                                            1.37€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.37€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -308,13 +321,14 @@
                                         <h3 class="fs-5 card-title">
                                             Cruzcampo
                                             Beer
-                                        </h5>
-                                        <p class="card-text">
-                                            1.05€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.05€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -327,13 +341,14 @@
                                             Estrella
                                             Galicia
                                             Beer
-                                        </h5>
-                                        <p class="card-text">
-                                            1.45€
-                                        </p>
-                                        <button tabindex="0" class="btn btn-lg btn-primary rounded-pill" role="button"
-                                            data-bs-trigger="focus" data-bs-toggle="popover" data-bs-title="Error"
-                                            data-bs-placement="top" data-bs-content="Error adding product">Add</button>
+                                            </h5>
+                                            <p class="card-text">
+                                                1.45€
+                                            </p>
+                                            <button tabindex="0" class="btn btn-lg btn-primary rounded-pill"
+                                                role="button" data-bs-trigger="focus" data-bs-toggle="popover"
+                                                data-bs-title="Error" data-bs-placement="top"
+                                                data-bs-content="Error adding product">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -505,6 +520,7 @@
 
     <!-- Footer -->
     <footer class="container-fluid p-0 text-center text-lg-start bg-dark text-muted" data-bs-theme="dark">
+        <!-- Redes sociales -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
                 <span>Connect with us on our social media:</span>
@@ -544,13 +560,15 @@
                 </a>
             </div>
         </section>
-        <section class="">
+
+        <!-- Footer -->
+        <section>
             <div class="container text-center text-md-start mt-5 border-bottom">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 ms-auto mb-4 align-middle">
-                        <a class="justify-content-center text-reset text-decoration-none" href="#">
+                        <a class="justify-content-center text-reset text-decoration-none title_logo_footer" href="#">
                             <img class="logo" src="../../rsc/icons/logo.png" alt="logo">
-                            Iberic Burgers
+                            Iberic Burguers
                         </a>
                     </div>
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -587,11 +605,15 @@
                 </div>
             </div>
         </section>
+
+        <!-- Copyright -->
         <div class="text-center p-4 bt-1 bg-dark" data-bs-theme="dark">
             <p>© 2024 Copyright:</p>
             <p class="fw-bold">Roy Lee Lunar More</p>
         </div>
     </footer>
+
+    <!-- Botón para volver arriba -->
     <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt">
         ↑
     </button>

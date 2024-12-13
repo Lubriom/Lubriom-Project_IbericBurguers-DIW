@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Legal Notice | Iberic Burgers </title>
+    <title>Legal Notice | Iberic Burguers </title>
 </head>
 
 <body class="container-fluid p-0">
@@ -24,9 +24,9 @@
     <header class="sticky-top z-3">
         <nav class="navbar navbar-expand-xl bg-dark border-body " data-bs-theme="dark">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand" href="indexEN.html">
+                <a class="navbar-brand title_logo" href="indexEN.html">
                     <img class="logo" src="../../rsc/icons/logo.png" alt="logo">
-                    Iberic Burgers
+                    Iberic Burguers
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas"
                     aria-controls="offCanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
-                        <ul class="navbar-nav d-flex align-items-center p-1">
+                        <ul class="navbar-nav d-flex align-items-center p-1 nav_fs">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="indexEN.html">Start</a>
                             </li>
@@ -52,28 +52,28 @@
                                 <a class="nav-link" href="contact.html">Contact and Reservations</a>
                             </li>
                         </ul>
-                        <div class="dropdown flex-column d-flex justify-self-center p-1" data-bs-theme="light">
+                        <div class="dropdown flex-column d-flex align-self-center p-1" data-bs-theme="light">
 
                             <a class="btn btn-light dropdown-toggle align-items-center justify-content-center rounded-3"
                                 href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"
                                 aria-expanded="false">
-                                <img src="../../rsc/icons/usa.png" width="25" alt="Bandera de Estados Unidos">
-                                Inglés
+                                <img src="../../rsc/icons/usa.png" width="25" alt="Flag of Usa">
+                                English
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-end rounded-3" aria-labelledby="dropdownMenuButton1">
                                 <li class="justify-content-center">
                                     <a class="dropdown-item" href="../es/aviso.html" data-bs-display="static">
-                                        <img src="../../rsc/icons/spain.png" width="25" alt="Bandera de España">
-                                        Español
+                                        <img src="../../rsc/icons/spain.png" width="25" alt="Flag of spain">
+                                        Spanish
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <form class="d-flex float-left p-1" role="search">
+                        <form class="float-left p-1 d-flex" role="search">
                             <input class="form-control me-2 rounded-3" type="search" placeholder="Search"
                                 aria-label="Search" data-bs-theme="light">
-                            <button class="btn bg-success d-flex" type="submit"><span class="bi bi-search"
+                            <button class="btn bg-success" type="submit"><span class="bi bi-search"
                                     aria-label="Search"></span></button>
                         </form>
                     </div>
@@ -142,6 +142,7 @@
 
     <!-- Footer -->
     <footer class="container-fluid p-0 text-center text-lg-start bg-dark text-muted" data-bs-theme="dark">
+        <!-- Redes sociales -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
                 <span>Connect with us on our social media:</span>
@@ -181,13 +182,15 @@
                 </a>
             </div>
         </section>
-        <section class="">
+
+        <!-- Footer -->
+        <section>
             <div class="container text-center text-md-start mt-5 border-bottom">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 ms-auto mb-4 align-middle">
-                        <a class="justify-content-center text-reset text-decoration-none" href="#">
+                        <a class="justify-content-center text-reset text-decoration-none title_logo_footer" href="#">
                             <img class="logo" src="../../rsc/icons/logo.png" alt="logo">
-                            Iberic Burgers
+                            Iberic Burguers
                         </a>
                     </div>
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -224,14 +227,20 @@
                 </div>
             </div>
         </section>
+
+        <!-- Copyright -->
         <div class="text-center p-4 bt-1 bg-dark" data-bs-theme="dark">
             <p>© 2024 Copyright:</p>
             <p class="fw-bold">Roy Lee Lunar More</p>
         </div>
     </footer>
+
+    <!-- Botón para volver arriba -->
     <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt">
         ↑
     </button>
+
+    <!-- Bootstrap JS-->
     <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         const backToTopButton = document.getElementById('backToTop');
