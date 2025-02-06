@@ -11980,14 +11980,14 @@ textarea.form-control-lg {
 .img-head {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 500px;
+  height: 600px;
   filter: brightness(70%);
 }
 
 .img-head1 {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 250px;
+  height: 300px;
   opacity: 0.4;
 }
 
