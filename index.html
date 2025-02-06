@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="icon" href="rsc/icons/logo.png">
+    <link rel="icon" href="rsc/icons/logoAlt.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,17 +18,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Inicio | Iberic Burguers </title>
+    <title>Inicio | Iberic Burguers</title>
 </head>
 
 <body class="container-fluid p-0">
 
     <!-- Header -->
-    <header class="sticky-top z-3">
-        <nav class="navbar navbar-expand-xl bg-dark border-body" data-bs-theme="dark">
+    <header class="container-fluid sticky-top z-3 position-fixed" id="header">
+        <nav class="navbar navbar-expand-xl border-body" data-bs-theme="dark">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand title_logo" href="index.html">
-                    <img class="logo" src="rsc/icons/logo.png" alt="logo">
+                    <img class="logo me-2" src="rsc/icons/logoAlt.svg" alt="logo">
                     Iberic Burguers
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas"
@@ -92,7 +92,7 @@
         <!-- Carousel -->
         <div id="carouselExampleInterval"
             class="carousel slide container-fluid p-0 w-100 bg-light position-relative text-center"
-            data-bs-ride="carousel" data-bs-interval="3000">
+            data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -103,11 +103,12 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="rsc/images/headIndex.jpg" class="d-flex w-100 img-head" alt="Imagen de una hamburguesa">
+                    <video src="rsc/videos/video1.webm" class="d-flex w-100 img-head" autoplay muted loop
+                        alt="Ingredientes a camara lenta">
                 </div>
                 <div class="carousel-item">
-                    <img src="rsc/images/headIndex1.jpg" class="d-block w-100 img-head"
-                        alt="Carne de hamburguesa en la parilla">
+                    <video src="rsc/videos/video2.webm" class="d-block w-100 img-head" autoplay muted loop
+                        alt="Preparando otra hamburguesa">
                 </div>
                 <div class="carousel-item">
                     <img src="rsc/images/aracena3.jpg" class="d-block w-100 img-head" alt="Dos hamburguesas ibéricas">
@@ -321,14 +322,14 @@
                 </a>
             </div>
         </section>
-        
+
         <!-- Footer -->
         <section>
             <div class="container text-center text-md-start mt-5 border-bottom">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 ms-auto mb-4 align-middle">
-                        <a class="justify-content-center text-reset text-decoration-none title_logo_footer" href="index.html">
-                            <img class="logo" src="rsc/icons/logo.png" alt="logo">
+                        <a class="justify-content-center text-reset text-decoration-none title_logo" href="index.html">
+                            <img class="logo me-2" src="rsc/icons/logoAlt.svg" alt="logo">
                             Iberic Burguers
                         </a>
                     </div>
@@ -337,13 +338,13 @@
                             Paginas
                         </h5>
                         <p>
-                            <a href="pages/es/comidas.html" class="text-reset">Menú</a>
+                            <a href="pages/es/comidas.html" class="text-reset link-social">Menú</a>
                         </p>
                         <p>
-                            <a href="pages/es/bebidas.html" class="text-reset">Bebidas</a>
+                            <a href="pages/es/bebidas.html" class="text-reset link-social">Bebidas</a>
                         </p>
                         <p>
-                            <a href="pages/es/contacto.html" class="text-reset">Contacto</a>
+                            <a href="pages/es/contacto.html" class="text-reset link-social">Contacto</a>
                         </p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -351,7 +352,7 @@
                             Links Útiles
                         </h5>
                         <p>
-                            <a href="pages/es/aviso.html" class="text-reset">Aviso Legal</a>
+                            <a href="pages/es/aviso.html" class="text-reset link-social">Aviso Legal</a>
                         </p>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -367,45 +368,22 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Copyright -->
         <div class="text-center p-4 bt-1 bg-dark" data-bs-theme="dark">
             <p>© 2024 Copyright:</p>
             <p class="fw-bold">Roy Lee Lunar More</p>
         </div>
     </footer>
-    
+
     <!-- Botón para volver arriba -->
-    <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt">
+    <button id="backToTop" class="btn btn-success btn-lg rounded-pill p-4 pos-btt bounceBTT">
         ↑
     </button>
 
     <!-- Bootstrap JS-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-        // Referencia al botón
-        const backToTopButton = document.getElementById('backToTop');
-
-        // Mostrar u ocultar el botón según la posición del scroll
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Mostrar después de 300px de desplazamiento
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-
-        // Acción al hacer clic: Desplazarse hacia arriba con suavidad
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="js/animations.js"></script> 
 </body>
 
 </html>
