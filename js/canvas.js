@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const imagenes = {
     img1: "/rsc/sprites/burger1.png",
-    img2: "../rsc/sprites/burger2.png"
+    img2: "rsc/sprites/burger2.png"
   };
 
   let ctx = canvas.getContext("2d");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   img.src = imagenes.img1;
-  star.src = "../rsc/sprites/star-spritesheet.png";
+  star.src = "rsc/sprites/star-spritesheet.png";
 
   function draw() {
     ctx.imageSmoothingEnabled = false;
