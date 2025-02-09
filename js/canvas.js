@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   let stars = [
-    { x: canvas.width - 120, y: 40, frameIndex: 0 },
-    { x: canvas.width, y: 10, frameIndex: 1 },
-    { x: canvas.width - 50, y: 140, frameIndex: 2 },
-    { x: canvas.width - 280, y: 160, frameIndex: 0 },
-    { x: canvas.width - 240, y: 0, frameIndex: 2 },
-    { x: canvas.width - 320, y: 100, frameIndex: 2 }
+    { x: canvas.width - 120, y: 40, frameIndex: 0, speed: 2 },
+    { x: canvas.width, y: 10, frameIndex: 1, speed: 1 },
+    { x: canvas.width - 50, y: 140, frameIndex: 2, speed: 3 },
+    { x: canvas.width - 280, y: 160, frameIndex: 0, speed: 2 },
+    { x: canvas.width - 240, y: 0, frameIndex: 2, speed: 2 },
+    { x: canvas.width - 320, y: 100, frameIndex: 3, speed: 1 }
   ];
 
   img.src = imagenes.img1;
@@ -44,12 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
       ctx.fillStyle = "#100c14";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // 1. Dibujar estrellas (capa atrás)
       stars.forEach((starObj) => {
         let frameX = starObj.frameIndex * 20;
         ctx.drawImage(star, frameX, 0, 20, 20, starObj.x, starObj.y, 20, 20);
 
-        starObj.x -= 2;
+        starObj.x -= starObj.speed;
         if (starObj.x < -20) {
           starObj.x = canvas.width + 20;
         }
