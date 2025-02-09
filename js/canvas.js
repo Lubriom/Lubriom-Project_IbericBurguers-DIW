@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   let canvas = document.getElementById("burgerSpace");
   let container = document.getElementById("canvasContainer");
+  let basePath = window.location.pathname.includes("/pages/en/") ? "../../" : "";
+  document.getElementById("burgerImg").src = basePath + "rsc/sprites/burger1.png";
 
   const imagenes = {
-    img1: "rsc/sprites/burger1.png",
-    img2: "rsc/sprites/burger2.png"
+    img1: basePath + "rsc/sprites/burger1.png",
+    img2: basePath + "rsc/sprites/burger2.png"
   };
 
   let ctx = canvas.getContext("2d");
@@ -14,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let speed = 0.5;
   let animationId = null;
   let state = true;
-  let img = new Image(), star = new Image();
+  let img = new Image(),
+    star = new Image();
 
   function resizeCanvas() {
     canvas.width = container.offsetWidth - 25;
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   img.src = imagenes.img1;
-  star.src = "rsc/sprites/star-spritesheet.png";
+  star.src = basePath + "rsc/sprites/star-spritesheet.png";
 
   function draw() {
     ctx.imageSmoothingEnabled = false;
