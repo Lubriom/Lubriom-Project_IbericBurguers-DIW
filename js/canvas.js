@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let canvas = document.getElementById("burgerSpace");
   let container = document.getElementById("canvasContainer");
   let basePath = window.location.pathname.includes("/pages/en/") ? "../../" : "";
-  document.getElementById("burgerImg").src = basePath + "rsc/sprites/burger1.png";
 
   const imagenes = {
     img1: basePath + "rsc/sprites/burger1.png",
