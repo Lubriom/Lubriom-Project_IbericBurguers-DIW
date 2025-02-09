@@ -41,45 +41,41 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                             aria-label="Cerrar"></button>
                     </div>
-                    <div class="offcanvas-body justify-content-end grid">
-                        <ul class="navbar-nav d-flex align-items-center p-1 nav_fs">
-                            <li class="nav-item text-center">
+                    <div class="offcanvas-body grid">
+                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs ">
+                            <li class="nav-item text-center mx-2">
                                 <a class="nav-link active text-decoration-underline link-offset-3" aria-current="page"
                                     href="index.html">Inicio</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="pages/es/comidas.html">Menú</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" href="pages/es/comidas.html">Menú</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="pages/es/bebidas.html">Bebidas</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" href="pages/es/bebidas.html">Bebidas</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="pages/es/contacto.html">Contacto y Reservas</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" href="pages/es/contacto.html">Contacto y Reservas</a>
                             </li>
                         </ul>
-                        <div class="dropdown flex-column d-flex align-self-center p-1" data-bs-theme="light">
-
-                            <a class="btn btn-light dropdown-toggle align-items-center justify-content-center rounded-3"
-                                href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"
-                                aria-expanded="false">
+                        <div class="dropdown align-self-center d-flex justify-content-center">
+                            <button type="button" class="btn bg-transparent justify-self-center"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="rsc/icons/spain.png" width="25" alt="Bandera de España">
-                                Español
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-end rounded-3" aria-labelledby="dropdownMenuButton1">
-                                <li class="justify-content-center">
-                                    <a class="dropdown-item" href="pages/en/indexEN.html" data-bs-display="static">
-                                        <img src="rsc/icons/usa.png" width="25" alt="Bandera de Estados Unidos">
-                                        Inglés
-                                    </a>
-                                </li>
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <a class="dropdown-item w-0 d-flex justify-content-center" href="pages/en/indexEN.html">
+                                    <img class="justify-self-center" src="rsc/icons/usa.png" width="25" alt="Bandera de Estados Unidos"> 
+                                </a>
                             </ul>
                         </div>
-                        <form class="d-flex float-left p-1" role="search">
-                            <input class="form-control me-2 rounded-3" type="search" placeholder="Buscar"
-                                aria-label="Search" data-bs-theme="light">
-                            <button class="btn bg-success d-flex" type="submit"><span class="bi bi-search"
-                                    aria-label="Buscar"></span></button>
+                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark">
+                            <input class="form-control me-2 rounded-3 bg-transparent" type="search" placeholder="Buscar"
+                                aria-label="Search">
+                            <button class="btn bg-secondary d-flex align-items-center" type="submit"
+                                data-bs-theme="light">
+                                <span class="bi bi-search" aria-label="Buscar">
+                                </span>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -149,6 +145,22 @@
                     <div class="col-md-4">
                         <img class="img-fluid w-100 img-cov" src="rsc/images/equipo.jpg"
                             alt="Nuestro equipo trabajando entregando hamburguesas">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Canvas -->
+        <div class="container-fluid bg-dark text-white p-5">
+            <div class="container pt-5 pb-5">
+                <div class="row d-flex flex-lg-row justify-content-evenly">
+                    <div class="col-md-4 d-flex align-items-center mb-4" id="canvasContainer">
+                        <canvas id="burgerSpace" class="rounded"></canvas>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center mb-4">
+                        <h2 data-bs-toggle="tooltip" class="my-tooltip" data-bs-placement="top">
+                            En el espacio tambien conocen nuestras hamburguesas.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -386,6 +398,7 @@
     <!-- Bootstrap JS-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/canvas.js"></script>
 </body>
 
 </html>

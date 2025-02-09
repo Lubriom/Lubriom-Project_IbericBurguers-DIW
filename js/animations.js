@@ -4,23 +4,6 @@ const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootst
 headerAnim();
 bttAnim();
 
-const header = document.querySelector("header");
-
-// Aplicar transparencia al inicio
-header.classList.add("header-transparent");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.classList.remove("header-transparent"); 
-    header.classList.add("bg-dark");
-    header.classList.add("header-solid");
-  } else {
-    header.classList.remove("header-solid");
-    header.classList.remove("bg-dark");
-    header.classList.add("header-transparent");
-  }
-});
-
 function bttAnim() {
   // Referencia al botón
   const backToTopButton = document.getElementById("backToTop");
@@ -57,5 +40,21 @@ function bttAnim() {
 }
 
 function headerAnim() {
-  document.addEventListener("DOMContentLoaded", function () {});
+  const header = document.querySelector("header"); 
+  const lang = document.getElementById("lang");
+
+  // Aplicar transparencia al inicio
+  header.classList.add("header-transparent");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.remove("header-transparent");
+      header.classList.add("bg-dark");
+      header.classList.add("header-solid");
+    } else {
+      header.classList.remove("header-solid");
+      header.classList.remove("bg-dark");
+      header.classList.add("header-transparent");
+    }
+  });
 }

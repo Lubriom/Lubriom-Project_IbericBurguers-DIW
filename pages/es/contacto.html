@@ -25,61 +25,58 @@
 
     <!-- Header -->
     <header class="container-fluid sticky-top z-3 position-fixed" id="header">
-        <nav class="navbar navbar-expand-xl border-body " data-bs-theme="dark">
+        <nav class="navbar navbar-expand-xl border-body" data-bs-theme="dark">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand title_logo" href="../../index.html">
-                    <img class="logo me-2" src="../../rsc/icons/logo.svg" alt="logo">
+                <a class="navbar-brand title_logo" href="index.html">
+                    <img class="logo me-2" src="../../rsc/icons/logoAlt.svg" alt="logo">
                     Iberic Burguers
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas"
-                    aria-controls="offCanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="offCanvas" aria-expanded="false" aria-label="Abrir navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-start bg-primary" id="offCanvas">
                     <div class="offcanvas-header border-bottom">
-                        <h5 class="offcanvas-title" id="offCanvasLabel">Navegación</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h4 class="offcanvas-title" id="offCanvasLabel">Navegación</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar"></button>
                     </div>
-                    <div class="offcanvas-body justify-content-end">
-                        <ul class="navbar-nav d-flex align-items-center p-1 nav_fs">
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="../../index.html">Inicio</a>
+                    <div class="offcanvas-body grid">
+                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs ">
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" href="../../index.html">Inicio</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="comidas.html">Menú</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" aria-current="page"
+                                    href="comidas.html">Menú</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link" href="bebidas.html">Bebidas</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link text-white" href="bebidas.html">Bebidas</a>
                             </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link active text-decoration-underline link-offset-3" aria-current="page"
-                                    href="contacto.html">Contacto y Reservas</a>
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link active text-decoration-underline link-offset-3" href="contacto.html">Contacto y Reservas</a>
                             </li>
-
                         </ul>
-                        <div class="dropdown flex-column d-flex align-self-center p-1" data-bs-theme="light">
-
-                            <a class="btn btn-light dropdown-toggle align-items-center justify-content-center rounded-3"
-                                href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"
-                                aria-expanded="false">
+                        <div class="dropdown align-self-center d-flex justify-content-center">
+                            <button type="button" class="btn bg-transparent justify-self-center"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../../rsc/icons/spain.png" width="25" alt="Bandera de España">
-                                Español
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-end rounded-3" aria-labelledby="dropdownMenuButton1">
-                                <li class="justify-content-center">
-                                    <a class="dropdown-item" href="../en/contact.html" data-bs-display="static">
-                                        <img src="../../rsc/icons/usa.png" width="25" alt="Bandera de Estados Unidos">
-                                        Inglés
-                                    </a>
-                                </li>
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <a class="dropdown-item w-0 d-flex justify-content-center" href="../en/contact.html">
+                                    <img class="justify-self-center" src="../../rsc/icons/usa.png" width="25"
+                                        alt="Bandera de Estados Unidos">
+                                </a>
                             </ul>
                         </div>
-                        <form class="d-flex float-left p-1" role="search">
-                            <input class="form-control me-2 rounded-3" type="search" placeholder="Buscar"
-                                aria-label="Search" data-bs-theme="light">
-                            <button class="btn bg-success d-flex" type="submit"><span class="bi bi-search"
-                                    aria-label="Buscar"></span></button>
+                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark">
+                            <input class="form-control me-2 rounded-3 bg-transparent" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
+                            <button class="btn bg-secondary d-flex align-items-center" type="submit"
+                                data-bs-theme="light">
+                                <span class="bi bi-search" aria-label="Buscar">
+                                </span>
+                            </button>
                         </form>
                     </div>
                 </div>
