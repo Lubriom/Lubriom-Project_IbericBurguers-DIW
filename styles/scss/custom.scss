@@ -1,117 +1,156 @@
-
 @import "../../bootstrap/scss/bootstrap";
 
-.logo{
-    width: 52px;
-    height: 52px;
+.logo {
+  width: 52px;
+  height: 52px;
 }
 
-.img-cov{
-    object-fit: cover; 
-    height: 350px;
-}
- 
-.img-head{
-    object-fit: cover; 
-    height: 600px;
-    filter: brightness(70%);
+.img-cov {
+  object-fit: cover;
+  height: 350px;
 }
 
-.img-head1{
-    object-fit: cover; 
-    height: 300px;
-    opacity: 0.4;
+.img-head {
+  object-fit: cover;
+  height: 600px;
+  filter: brightness(70%);
+}
+
+.img-head1 {
+  object-fit: cover;
+  height: 300px;
+  opacity: 0.4;
 }
 
 .popover-header {
-    background-color: #280600;
-    color: #fff;
+  background-color: #280600;
+  color: #fff;
 }
 
 .social-icons a {
-    transition: transform 0.2s ease;
-    fill: #fff;
+  transition: transform 0.2s ease;
+  fill: #fff;
 }
 
 .social-icons a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.title_header{
-    font-family: "Lobster", sans-serif;
-    font-size: 3rem;
+.title_header {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
 }
-.title_logo{
-    font-family: "Lobster", sans-serif;
-    font-size: 1.8rem;
+.title_logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 1.8rem;
 }
-.title_logo_footer{
-    font-family: "Lobster", sans-serif;
-    font-size: 1.5rem;
+.title_logo_footer {
+  font-family: "Lobster", sans-serif;
+  font-size: 1.5rem;
 }
 
-.nav_fs{
-    font-size: 20px;
+.nav_fs {
+  font-size: 20px;
 }
 
 .pos-btt {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none; 
-    z-index: 1000; 
-} 
-  
-.link-social {
-    font-size: 16px; 
-    margin: 2px;
-} 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+}
 
-.link-social:hover { 
-    color: #fff; 
-    font-size: 17px; 
-    margin: 0px;
-} 
- 
- /** - ANIMACIONES - **/
- 
+.link-social {
+  font-size: 16px;
+  margin: 2px;
+}
+
+.link-social:hover {
+  color: #fff;
+  font-size: 17px;
+  margin: 0px;
+}
+
+/** - ANIMACIONES - **/
+
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(-10px);
-    }
-    40% {
-        transform: translateY(5px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-    80% {
-        transform: translateY(2px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
 }
 
 .bounceBTT {
-    animation: bounce 0.6s ease;
+  animation: bounce 0.6s ease;
 }
 
 .fadeBTT {
-    opacity: 0;
-    transition: opacity 0.25s ease-out;
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
 }
 
 .visibleBTT {
-    opacity: 1;
-    transition: opacity 0.25s ease-in;
-} 
- 
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+
 .header-transparent {
-    background-color: transparent;
-    transition: background-color 0.25s ease-in-out;
+  background-color: transparent;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .header-solid {
-    transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+ 
+.cart-anim {
+  transition: all 0.3s ease-in-out;
+}
+.cart-anim:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart-anim:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+ 
+@keyframes bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  50% { transform: scale(0.9); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 2px #FFEEA3; }
+  50% { box-shadow: 0 0 10px #ffd82c; }
+  100% { box-shadow: 0 0 2px #FFEEA3 }
+} 
+
+.btt-anim {
+  transition: all 0.3s ease-in-out;
+}
+.btt-anim:hover {
+  animation: bounce 0.5s ease-in-out, glow 1s infinite alternate;
+}
+
+.btt-anim:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
 }

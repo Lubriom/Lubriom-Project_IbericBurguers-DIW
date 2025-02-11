@@ -17,17 +17,19 @@
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Start | Iberic Burguers </title>
 </head>
 
 <body class="container-fluid p-0">
 
     <!-- Header -->
-    <header class="container-fluid sticky-top z-3 position-fixed" id="header">
+    <header class="container-fluid sticky-top z-3 position-fixed" id="header" data-aos="fade-in" data-aos-delay="200">
         <nav class="navbar navbar-expand-xl border-body" data-bs-theme="dark">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand title_logo" href="index.html">
+                <a class="navbar-brand title_logo" href="index.html" data-aos="slide-right">
                     <img class="logo me-2" src="../../rsc/icons/logoAlt.svg" alt="logo">
                     Iberic Burguers
                 </a>
@@ -42,7 +44,7 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body grid">
-                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs ">
+                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs " data-aos="slide-down" data-aos-delay="400">
                             <li class="nav-item text-center mx-2">
                                 <a class="nav-link active text-decoration-underline link-offset-3" aria-current="page"
                                     href="indexEN.html">Start</a>
@@ -57,18 +59,18 @@
                                 <a class="nav-link text-white" href="contact.html">Contact and Reservations</a>
                             </li>
                         </ul>
-                        <div class="dropdown align-self-center d-flex justify-content-center">
+                        <div class="dropdown d-flex justify-content-center" data-aos="slide-left">
                             <button type="button" class="btn bg-transparent justify-self-center"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../../rsc/icons/usa.webp" width="25" alt="Flag of USA">
+                                <img src="../../rsc/icons/usa.png" width="25" alt="Flag of USA">
                             </button>
-                            <ul class="dropdown-menu ">
-                                <a class="dropdown-item w-0 d-flex justify-content-center" href="../../index.html">
-                                    <img class="justify-self-center" src="../../rsc/icons/spain.webp" width="25" alt="Flag of Spain"> 
+                            <ul class="dropdown-menu w-100">
+                                <a class="dropdown-item d-flex justify-content-center" href="../../index.html">
+                                    <img class="justify-self-center" src="../../rsc/icons/spain.png" width="25" alt="Flag of Spain"> 
                                 </a>
                             </ul>
                         </div>
-                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark">
+                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark" data-aos="slide-left">
                             <input class="form-control me-2 rounded-3 bg-transparent" type="search" placeholder="Search"
                                 aria-label="Search">
                             <button class="btn bg-secondary d-flex align-items-center" type="submit"
@@ -112,8 +114,8 @@
                         alt="Making the meat">
                 </div>
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <h1 class="mb-3 text-white title_header">The best burgers of Aracena</h1>
-                    <h2 class="mb-3 text-white fs-4 d-none d-md-block">We combine the best of Iberian products in a good
+                    <h1 class="mb-3 text-white title_header" data-aos="zoom-out-down" data-aos-delay="250">The best burgers of Aracena</h1>
+                    <h2 class="mb-3 text-white fs-4 d-none d-md-block" data-aos="zoom-out-up" data-aos-delay="520">We combine the best of Iberian products in a good
                         burger to delight your taste buds</h2>
                     <a class="btn btn-light rounded-pill px-5 py-3" href="drinks.html" role="button">Menu</a>
                 </div>
@@ -134,14 +136,14 @@
         <div class="container-fluid bg-secondary p-5">
             <div class="container pt-5 pb-5">
                 <div class="row d-flex flex-lg-row justify-content-center">
-                    <div class="col-md-4 d-flex align-items-center mb-4">
+                    <div class="col-md-4 d-flex align-items-center mb-4" data-aos="fade-right" data-aos-delay="100">
                         <h2 data-bs-toggle="tooltip" data-bs-placement="top"
                             title="Our mission is to make you feel at home.">
                             At our hamburger restaurant in Aracena we not only serve food, we create unforgettable
                             moments in family.
                         </h2>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <img class="img-fluid w-100 img-cov" src="../../rsc/images/equipo.webp"
                             alt="Our team working to deliver burgers">
                     </div>
@@ -153,10 +155,10 @@
         <div class="container-fluid bg-dark text-white p-5">
             <div class="container pt-5 pb-5">
                 <div class="row d-flex flex-lg-row justify-content-evenly">
-                    <div class="col-md-4 d-flex align-items-center mb-4" id="canvasContainer">
-                        <canvas id="burgerSpace" class="rounded"></canvas>
+                    <div class="col-md-4 d-flex align-items-center mb-4" id="canvasContainer" data-aos="fade-up" data-aos-delay="100">
+                        <canvas id="burgerSpace" class="rounded" ></canvas>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center mb-4">
+                    <div class="col-md-4 d-flex align-items-center mb-4" data-aos="fade-left" data-aos-delay="100">
                         <h2 data-bs-toggle="tooltip" class="my-tooltip" data-bs-placement="top">
                             In space they also know our burgers.
                         </h2>
@@ -169,7 +171,7 @@
         <div class="container-fluid bg-primary text-white p-5">
             <div class="container pt-5 pb-5">
                 <div class="row mt-4 mb-4">
-                    <div class="col-lg-4 mb-4 mb-md-0">
+                    <div class="col-lg-4 mb-4 mb-md-0" data-aos="fade-down" data-aos-delay="400">
                         <h3 class="mb-3 text-uppercase">Who we are</h3>
                         <p class="text-justify">
                             We are a company dedicated to the production of quality and excellent hamburgers.
@@ -178,15 +180,15 @@
                     </div>
                     <!-- Otras secciones -->
                     <div class="row col d-flex justify-content-around">
-                        <div class="col-lg-3 mb-4 mb-md-0">
+                        <div class="col-lg-3 mb-4 mb-md-0" data-aos="fade-down" data-aos-delay="550">
                             <h3 class="mb-3 text-uppercase">Job</h3>
                             <p>At Iberic Burgers we work hand in hand with the best suppliers in Aracena.</p>
                         </div>
-                        <div class="col-lg-3 mb-4 mb-md-0">
+                        <div class="col-lg-3 mb-4 mb-md-0" data-aos="fade-down" data-aos-delay="700">
                             <h3 class="mb-3 text-uppercase">Products</h3>
                             <p>Our products are made with the best raw materials and the best ingredients.</p>
                         </div>
-                        <div class="col-lg-3 mb-4 mb-md-0">
+                        <div class="col-lg-3 mb-4 mb-md-0" data-aos="fade-down" data-aos-delay="850">
                             <h3 class="mb-3 text-uppercase">Culture</h3>
                             <p>We promote the Iberian brand in Aracena, in order to promote culture.</p>
                         </div>
@@ -199,12 +201,12 @@
         <div class="container-fluid mt-5 mb-5">
             <div class="container pt-3 pb-3">
                 <div class="mb-5 text-center">
-                    <h2 class="mb-4">Testimonials</h2>
-                    <h3 class="fs-5 mb-4">Below we leave you some testimonials from our clients:</h3>
+                    <h2 class="mb-4" data-aos="zoom-out-down" data-aos-delay="100">Testimonials</h2>
+                    <h3 class="fs-5 mb-4" data-aos="zoom-out-up" data-aos-delay="250">Below we leave you some testimonials from our clients:</h3>
                 </div>
                 <div class="card-group">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
+                        <div class="col" data-aos="slide-right" data-aos-delay="100">
                             <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex align-items-center">
@@ -224,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="slide-left" data-aos-delay="100">
                             <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex align-items-center">
@@ -244,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="slide-right" data-aos-delay="100">
                             <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex align-items-center">
@@ -264,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="slide-left" data-aos-delay="100">
                             <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex align-items-center">
