@@ -18,6 +18,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Drinks | Iberic Burguers </title>
 </head>
 
@@ -27,7 +29,7 @@
     <header class="container-fluid sticky-top z-3 position-fixed" id="header">
         <nav class="navbar navbar-expand-xl border-body" data-bs-theme="dark">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand title_logo" href="index.html">
+                <a class="navbar-brand title_logo" href="index.html" data-aos="slide-right">
                     <img class="logo me-2" src="../../rsc/icons/logoAlt.svg" alt="logo">
                     Iberic Burguers
                 </a>
@@ -41,7 +43,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body grid">
-                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs ">
+                        <ul class="navbar-nav d-flex flex-fill align-items-center justify-content-center p-1 nav_fs"
+                            data-aos="slide-down" data-aos-delay="400">
                             <li class="nav-item text-center mx-2">
                                 <a class="nav-link text-white" href="indexEN.html">Start</a>
                             </li>
@@ -56,7 +59,7 @@
                                 <a class="nav-link text-white" href="contact.html">Contact and Reservations</a>
                             </li>
                         </ul>
-                        <div class="dropdown d-flex justify-content-center">
+                        <div class="dropdown d-flex justify-content-center" data-aos="slide-left">
                             <button type="button" class="btn bg-transparent justify-self-center"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../../rsc/icons/usa.png" width="25" alt="Flag of USA">
@@ -68,7 +71,7 @@
                                 </a>
                             </ul>
                         </div>
-                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark">
+                        <form class="d-flex float-right p-1" role="search" data-bs-theme="dark" data-aos="slide-left">
                             <input class="form-control me-2 rounded-3 bg-transparent" type="search" placeholder="Search"
                                 aria-label="Search">
                             <button class="btn bg-secondary d-flex align-items-center" type="submit"
@@ -92,8 +95,9 @@
                 class="img-fluid img-head1 w-100">
             <div class="position-absolute top-50 start-50 translate-middle">
                 <br>
-                <h1 class="mb-3 title_header">Drinks</h1>
-                <h2 class="fs-4 mb-3">Everything you need to drink can be found here.</h2>
+                <h1 class="mb-3 title_header" data-aos="zoom-out-down" data-aos-delay="250">Drinks</h1>
+                <h2 class="fs-4 mb-3" data-aos="zoom-out-up" data-aos-delay="520">Everything you need to drink can be
+                    found here.</h2>
             </div>
         </div>
 
