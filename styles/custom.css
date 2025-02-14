@@ -12098,6 +12098,15 @@ textarea.form-control-lg {
   transition: transform 0.1s;
 }
 
+.hovercard {
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.hovercard:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 @keyframes bounce {
   0% {
     transform: scale(1);
